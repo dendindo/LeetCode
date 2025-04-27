@@ -1,18 +1,18 @@
-# Problem 94
+# Problem 144
 
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         order = []
+
 
         def traverse(node):
 
             if node is None:
                 return
 
-            traverse(node.left)
-
             order.append(node.val)
+
+            traverse(node.left)
 
             traverse(node.right)
 
