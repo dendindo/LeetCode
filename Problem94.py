@@ -1,7 +1,7 @@
 # Problem 94
 
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def inorderTraversal(self, root):
 
         order = []
 
